@@ -1,0 +1,83 @@
+asgiref==3.5.0
+certifi==2021.10.8
+cffi==1.15.0
+charset-normalizer==2.0.12
+class-registry==2.1.2
+coreapi==2.3.3
+coreschema==0.0.4
+cryptography==36.0.2
+Django==4.0.4
+django-cors-headers==3.11.0
+django-filter==21.1
+djangorestframework==3.13.1
+djangorestframework-simplejwt==5.1.0
+filters==1.3.2
+filters-django==1.0.5
+idna==3.3
+itypes==1.2.0
+Jinja2==3.1.1
+MarkupSafe==2.1.1
+openapi-codec==1.3.2
+Pillow==9.1.0
+psycopg2==2.9.3
+pycparser==2.21
+PyJWT==2.3.0
+python-dateutil==2.8.2
+pytz==2022.1
+regex==2022.4.24
+requests==2.27.1
+simplejson==3.17.6
+six==1.16.0
+sqlparse==0.4.2
+tzdata==2022.1
+uritemplate==4.1.1
+urllib3==1.26.9
+whitenoise==6.0.0
+
+
+
+"""""
+1.Superuser:user password:1
+2.Registration
+http://127.0.0.1:7000/api/v1/auth/register/
+Username:username
+Password:password
+Password2:password  
+Email:email
+FirstName:firstname
+Last Name:lastname
+2.Token obtain:
+http://127.0.0.1:7000/api/v1/auth/token/
+Username:username
+Password:password
+
+
+Reservoir:(Suv ombor)
+Get:  http://127.0.0.1:7000/api/v1/reservoir/ Bearer Token {token}
+Get:  http://127.0.0.1:7000/api/v1/reservoir/{id}/ Bearer Token {token}
+Post: http://127.0.0.1:7000/api/v1/reservoir/create/Bearer Token {token}
+Post: http://127.0.0.1:7000/api/v1/reservoir/update/Bearer Token {token}
+Delete:http://127.0.0.1:7000/api/v1/reservoir/delete/{id}/ Bearer Token {token}
+
+Indicators(datchik)
+Get:  http://127.0.0.1:7000/api/v1/indicator/ Bearer Token {token}
+Get:  http://127.0.0.1:7000/api/v1/indicator/{id}/ Bearer Token {token}
+Post: http://127.0.0.1:7000/api/v1/indicator/create/Bearer Token {token}
+Post: http://127.0.0.1:7000/api/v1/indicator/update/Bearer Token {token}
+Delete:http://127.0.0.1:7000/api/v1/indicator/delete/{id}/ Bearer Token {token}
+
+Targets
+Get:  http://127.0.0.1:7000/api/v1/target/ Bearer Token {token}
+Get:  http://127.0.0.1:7000/api/v1/target/{id}/ Bearer Token {token}
+Post: http://127.0.0.1:7000/api/v1/target/create/Bearer Token {token}
+Post: http://127.0.0.1:7000/api/v1/target/update/Bearer Token {token}
+Delete:http://127.0.0.1:7000/api/v1/target/delete/{id}/ Bearer Token {token}
+
+History
+Get:  http://127.0.0.1:7000/api/v1/history/ Bearer Token {token}
+Get:  http://127.0.0.1:7000/api/v1/history/{id}/ Bearer Token {token}
+Post: http://127.0.0.1:7000/api/v1/history/create/Bearer Token {token}
+Post: http://127.0.0.1:7000/api/v1/history/update/Bearer Token {token}
+Delete:http://127.0.0.1:7000/api/v1/history/delete/{id}/ Bearer Token {token}
+
+"""
